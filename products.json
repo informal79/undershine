@@ -1,20 +1,16 @@
 [
-  {
-    "name": "소프트 코튼 데일리 티셔츠",
-    "price": 29000,
-    "image": "assets/undershine-hero.png",
-    "purchaseUrl": "https://your-store.example/products/soft-cotton-tee"
-  },
-  {
-    "name": "컴포트 데일리 이너웨어",
-    "price": 24000,
-    "image": "assets/undershine-hero.png",
-    "purchaseUrl": "https://your-store.example/products/comfort-innerwear"
-  },
-  {
-    "name": "릴랙스드 내추럴 셔츠",
-    "price": 49000,
-    "image": "assets/undershine-hero.png",
-    "purchaseUrl": "https://your-store.example/products/relaxed-shirt"
-  }
+  {"name":"언더샤인 여성 파스텔 노라인 미디 면팬티 10종 세트","price":16800,"image":"https://thumbnail9.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/aeaa/ed650a2e84ac9a3cf660c5be801ee479619b024fd86851fbd5875eefa89f.jpg","purchaseUrl":"https://www.coupang.com/vp/products/7212193771"},
+  {"name":"언더샤인 모달 일체형 브라캡 크롭 나시 끈조절 2P","price":13900,"image":"https://thumbnail10.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/image_audit/stage/manual/1e61b76a5008c1824f0d770e4caa46b17b6a5abb79888064c0ae4082178b_1780626545049.jpg","purchaseUrl":"https://www.coupang.com/vp/products/8116408912"},
+  {"name":"언더샤인 남성 밴딩 스판 조거팬츠","price":9900,"image":"https://thumbnail10.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/image_audit/stage/manual/ee8e44801acd0598750af25ff0b62875656f13291a7a29ddb27f44f940da_1786686986766.jpg","purchaseUrl":"https://www.coupang.com/vp/products/8796402829"},
+  {"name":"언더샤인 여성 고급 파스텔 맥시 면팬티 6종·10종 세트","price":18800,"image":"https://thumbnail9.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/8b0d/b7637a87d3950372955c573a7bf2cc2856c4be08d4eb5b313393dc5d3ad0.jpg","purchaseUrl":"https://www.coupang.com/vp/products/7227756048"},
+  {"name":"언더샤인 여성 4부 밴딩 코튼 와이드핏 데일리 팬츠","price":7900,"image":"https://thumbnail7.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/3cd8/41baf9d241b8a3d854e43e048098b1bd22cb46216fb07ed78cffe28cf3b6.jpg","purchaseUrl":"https://www.coupang.com/vp/products/8804304629"},
+  {"name":"언더샤인 여성 스판 조거팬츠","price":11900,"image":"https://thumbnail10.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/a06a/8f5d51754b96256f33cb851567da46bb18bd959a9a33a35888fd86d54c97.jpg","purchaseUrl":"https://www.coupang.com/vp/products/8800357078"},
+  {"name":"언더샤인 여성 와이드 밴딩 일자·조거 팬츠","price":14900,"image":"https://thumbnail10.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/1191/09c120f61a5b55956e0858d2de4e0da68e0df20611fdae3ce82d10946aee.jpg","purchaseUrl":"https://www.coupang.com/vp/products/8288714115"},
+  {"name":"언더샤인 여성 하이웨스트 핀턱 A라인 뒷밴딩 슬랙스 반바지","price":7900,"image":"https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/image_audit/stage/manual/1d88d824d3b855373d91c432925c76d30de19bd8bf9cde1f5833604d8f21_1778647475027.jpg","purchaseUrl":"https://www.coupang.com/vp/products/9512968329"},
+  {"name":"언더샤인 여성 노라인 심리스 햄팬티 3장 세트","price":9900,"image":"https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/image_audit/stage/manual/d46b18603d57012500343df0eed1a06c317d079bd578b97a469e3d7fef6e_1781162636455.jpg","purchaseUrl":"https://www.coupang.com/vp/products/9538020256"},
+  {"name":"언더샤인 여성 노라인 무봉제 햄팬티 6종 세트","price":14900,"image":"https://thumbnail7.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/ec42/86269f3e0929c9592c84aca3b52f958836a69ef89e927cacb6d4ed39222d.jpg","purchaseUrl":"https://www.coupang.com/vp/products/9485632946"},
+  {"name":"언더샤인 여성 레이온 골지 스판 라운드넥 나시 2종","price":7900,"image":"https://thumbnail6.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/665f/08520f2ac961744aef6263b42b3563e603eb877ed0c8254fb1a132e781b1.jpg","purchaseUrl":"https://www.coupang.com/vp/products/9556667613"},
+  {"name":"언더샤인 여성 스퀘어넥 크롭 면나시 2종","price":15900,"image":"https://thumbnail7.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/ccb1/9e2ebf70e8fd6af8474cbd9734da8175a54e7f720c05a12622b7a0dbe6ef.jpg","purchaseUrl":"https://www.coupang.com/vp/products/8128025828"},
+  {"name":"언더샤인 겨울 두꺼운 팬티스타킹 200D 3종 세트","price":18800,"image":"https://thumbnail10.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/66dc/5a234ceb7cff59ecd3bf9a1b8c35909cbc867b8bfd88949a2dec63777d6c.jpg","purchaseUrl":"https://www.coupang.com/vp/products/6865284191"},
+  {"name":"언더샤인 여성 소프트 비스코스 긴팔 니트티","price":15000,"image":"https://thumbnail9.coupangcdn.com/thumbnails/remote/230x230ex/image/vendor_inventory/3f6c/977212580cdb95933c98d4feacb9f13fd2bf51d4e7e0f7d93a2f88588762.jpg","purchaseUrl":"https://www.coupang.com/vp/products/7574685985"}
 ]
