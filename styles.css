@@ -91,15 +91,18 @@ p { max-width: 40ch; line-height: 1.85; }
 .shop-card-image { display: block; aspect-ratio: 1; overflow: hidden; background: var(--ivory); }
 .shop-card-image img { width: 100%; height: 100%; object-fit: cover; transform: scale(1); transition: transform .6s ease; }
 .shop-card:hover .shop-card-image img { transform: scale(1.035); }
-.shop-card-info { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; padding: 20px 2px 0; }
+.shop-card-info { padding: 20px 2px 0; }
 .shop-card-info h3 { font-size: 16px; line-height: 1.45; letter-spacing: -.025em; }
 .product-tagline { margin-top: 8px; color: color-mix(in srgb, var(--green) 72%, transparent); font-size: 12px; line-height: 1.65; }
 .price-block { margin-top: 10px; }
 .regular-price { color: color-mix(in srgb, var(--green) 55%, transparent); font: 500 11px "Noto Sans KR", sans-serif; text-decoration: line-through; text-decoration-thickness: 1px; }
 .sale-price { display: flex; align-items: baseline; gap: 9px; margin-top: 3px; color: var(--green); font: 600 15px "DM Sans", sans-serif; }
 .sale-price strong { color: var(--gold); font-size: 16px; }
-.buy-button { flex: none; padding: 10px 18px; border: 1px solid currentColor; font-size: 12px; font-weight: 600; }
+.product-actions { display: flex; gap: 8px; margin-top: 18px; }
+.buy-button,.purchase-button { flex: 1; min-height: 42px; padding: 10px 14px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid var(--green); font-size: 12px; font-weight: 600; text-align: center; }
 .buy-button:hover { background: var(--gold); border-color: var(--gold); color: var(--green); }
+.purchase-button { background: var(--green); color: var(--ivory); }
+.purchase-button:hover { background: var(--gold); border-color: var(--gold); color: var(--green); }
 .collection-more { margin-top: 55px; }
 .products-status { grid-column: 1/-1; padding: 70px 0; text-align: center; }
 .products-error { color: var(--gold); }
@@ -150,9 +153,11 @@ p { max-width: 40ch; line-height: 1.85; }
 .featured-tagline { margin-top: 32px; font-size: clamp(17px, 1.5vw, 22px); }
 .featured-product-copy .price-block { margin-top: 28px; }
 .featured-product-copy .sale-price { font-size: 19px; }
-.featured-buy-button,.all-products-button { display: inline-flex; width: fit-content; align-items: center; justify-content: center; border: 1px solid var(--green); font-size: 13px; font-weight: 600; }
-.featured-buy-button { margin-top: 42px; padding: 14px 26px; }
-.featured-buy-button:hover,.all-products-button:hover { background: var(--gold); border-color: var(--gold); }
+.featured-product-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 42px; }
+.featured-buy-button,.featured-purchase-button,.all-products-button { display: inline-flex; width: fit-content; align-items: center; justify-content: center; border: 1px solid var(--green); font-size: 13px; font-weight: 600; }
+.featured-buy-button,.featured-purchase-button { min-width: 132px; padding: 14px 26px; }
+.featured-buy-button:hover,.featured-purchase-button:hover,.all-products-button:hover { background: var(--gold); border-color: var(--gold); color: var(--green); }
+.featured-purchase-button { background: var(--green); color: var(--ivory); }
 .curated-grid-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: 8vh; }
 .curated-grid-heading .eyebrow { color: var(--gold); }
 .curated-grid-heading h2 { max-width: 12ch; font-size: clamp(42px, 5vw, 72px); line-height: 1.08; }
@@ -199,7 +204,8 @@ footer p, footer .back-to-top, .footer-contact { color: var(--ivory); font: 600 
   .section-heading p { margin-top: 25px; }
   .product-grid { grid-template-columns: 1fr; gap: 11vh; }
   .shop-card-image { aspect-ratio: 1; }
-  .shop-card-info { align-items: center; }
+  .product-actions { width: 100%; }
+  .buy-button,.purchase-button { padding-inline: 10px; }
   .stories-layout { grid-template-columns: 1fr; gap: 10vh; }
   .story { grid-template-columns: 72px 1fr 20px; }
   .story div > p:last-child { display: none; }

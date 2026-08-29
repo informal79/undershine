@@ -66,17 +66,27 @@ function createProductCard(product) {
   priceBlock.append(salePrice);
   text.append(name, tagline, priceBlock);
 
-  const buyButton = document.createElement('a');
-  buyButton.className = 'buy-button';
-  configurePurchaseLink(buyButton, product);
-  buyButton.setAttribute('data-cart-add', '');
-  buyButton.setAttribute('data-name', product.name);
-  buyButton.setAttribute('data-price', String(product.price));
-  buyButton.setAttribute('data-url', product.purchaseUrl);
-  buyButton.textContent = '장바구니 담기';
-  buyButton.setAttribute('aria-label', `${product.name} 장바구니에 담기`);
+  const actions = document.createElement('div');
+  actions.className = 'product-actions';
 
-  info.append(text, buyButton);
+  const cartButton = document.createElement('a');
+  cartButton.className = 'buy-button';
+  configurePurchaseLink(cartButton, product);
+  cartButton.setAttribute('data-cart-add', '');
+  cartButton.setAttribute('data-name', product.name);
+  cartButton.setAttribute('data-price', String(product.price));
+  cartButton.setAttribute('data-url', product.purchaseUrl);
+  cartButton.textContent = '장바구니 담기';
+  cartButton.setAttribute('aria-label', `${product.name} 장바구니에 담기`);
+
+  const purchaseButton = document.createElement('a');
+  purchaseButton.className = 'purchase-button';
+  configurePurchaseLink(purchaseButton, product);
+  purchaseButton.textContent = '구매하기';
+  purchaseButton.setAttribute('aria-label', `${product.name} 바로 구매하기`);
+
+  actions.append(cartButton, purchaseButton);
+  info.append(text, actions);
   card.append(imageLink, info);
   return card;
 }
@@ -126,17 +136,27 @@ function createFeaturedProduct(product) {
   salePrice.append(currentPrice);
   priceBlock.append(salePrice);
 
-  const buyButton = document.createElement('a');
-  buyButton.className = 'featured-buy-button';
-  configurePurchaseLink(buyButton, product);
-  buyButton.setAttribute('data-cart-add', '');
-  buyButton.setAttribute('data-name', product.name);
-  buyButton.setAttribute('data-price', String(product.price));
-  buyButton.setAttribute('data-url', product.purchaseUrl);
-  buyButton.textContent = '장바구니 담기';
-  buyButton.setAttribute('aria-label', `${product.name} 장바구니에 담기`);
+  const actions = document.createElement('div');
+  actions.className = 'featured-product-actions';
 
-  copy.append(eyebrow, name, tagline, priceBlock, buyButton);
+  const cartButton = document.createElement('a');
+  cartButton.className = 'featured-buy-button';
+  configurePurchaseLink(cartButton, product);
+  cartButton.setAttribute('data-cart-add', '');
+  cartButton.setAttribute('data-name', product.name);
+  cartButton.setAttribute('data-price', String(product.price));
+  cartButton.setAttribute('data-url', product.purchaseUrl);
+  cartButton.textContent = '장바구니 담기';
+  cartButton.setAttribute('aria-label', `${product.name} 장바구니에 담기`);
+
+  const purchaseButton = document.createElement('a');
+  purchaseButton.className = 'featured-purchase-button';
+  configurePurchaseLink(purchaseButton, product);
+  purchaseButton.textContent = '구매하기';
+  purchaseButton.setAttribute('aria-label', `${product.name} 바로 구매하기`);
+
+  actions.append(cartButton, purchaseButton);
+  copy.append(eyebrow, name, tagline, priceBlock, actions);
   article.append(imageLink, copy);
   return article;
 }
