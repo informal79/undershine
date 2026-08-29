@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">UnderShine 심벌</title>
+  <desc id="desc">부드러운 U 형태 안에서 한 줄기 빛이 올라오는 모습을 표현한 심벌</desc>
+  <path
+    d="M140 72v194c0 87 47 134 116 134s116-47 116-134V72"
+    fill="none"
+    stroke="#14352A"
+    stroke-width="88"
+    stroke-linecap="butt"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M244 360c2-48 5-104 8-143 1-12 2-22 4-29 2 7 3 17 4 29 3 39 6 95 8 143a105 105 0 0 1-24 0Z"
+    fill="#14352A"
+  />
+</svg>
