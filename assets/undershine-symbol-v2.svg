@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">UnderShine U·S 심벌</title>
+  <desc id="desc">편안하게 받쳐주는 U 안에서 골드빛 S 리본이 자연스럽게 흐르는 심벌</desc>
+  <path
+    d="M136 80v185c0 94 49 151 120 151s120-57 120-151V80"
+    fill="none"
+    stroke="#14352A"
+    stroke-width="76"
+    stroke-linecap="butt"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M294 157c-13-13-31-20-49-18-24 2-41 17-41 38 0 25 22 35 48 43 29 9 54 22 54 53 0 34-27 61-64 61-23 0-44-9-58-25"
+    fill="none"
+    stroke="#B98A3E"
+    stroke-width="22"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
