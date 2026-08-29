@@ -1,0 +1,20 @@
+[
+  {
+    "name": "소프트 코튼 데일리 티셔츠",
+    "price": 29000,
+    "image": "assets/undershine-hero.png",
+    "purchaseUrl": "https://your-store.example/products/soft-cotton-tee"
+  },
+  {
+    "name": "컴포트 데일리 이너웨어",
+    "price": 24000,
+    "image": "assets/undershine-hero.png",
+    "purchaseUrl": "https://your-store.example/products/comfort-innerwear"
+  },
+  {
+    "name": "릴랙스드 내추럴 셔츠",
+    "price": 49000,
+    "image": "assets/undershine-hero.png",
+    "purchaseUrl": "https://your-store.example/products/relaxed-shirt"
+  }
+]

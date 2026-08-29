@@ -18,13 +18,13 @@
   <header class="site-header" id="top">
     <a class="logo" href="index.html#home" aria-label="UnderShine 홈">UNDER<span>SHINE</span></a>
     <nav class="desktop-nav" aria-label="주요 메뉴">
-      <a href="about.html">내 소개</a><a href="#collection">제품</a><a href="#stories">이야기</a><a href="#contact">연락하기</a>
+      <a href="about.html">내 소개</a><a href="products.html">제품</a><a href="#stories">이야기</a><a href="#contact">연락하기</a>
     </nav>
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="메뉴 열기">
       <span></span><span></span>
     </button>
     <nav class="mobile-nav" id="mobile-nav" aria-label="모바일 메뉴">
-      <a href="about.html">내 소개</a><a href="#collection">제품</a><a href="#stories">이야기</a><a href="#contact">연락하기</a>
+      <a href="about.html">내 소개</a><a href="products.html">제품</a><a href="#stories">이야기</a><a href="#contact">연락하기</a>
     </nav>
   </header>
 
@@ -36,7 +36,7 @@
         <p class="eyebrow">NATURAL · EVERYDAY WEAR</p>
         <h1 id="hero-title">Quietly,<br><em>You Shine.</em></h1>
         <p class="hero-description">편안함 속에서 자연스럽게,<br>당신의 일상을 빛내는 옷.</p>
-        <a class="text-link light" href="#collection">컬렉션 보기 <span aria-hidden="true">↗</span></a>
+        <a class="text-link light" href="products.html">컬렉션 보기 <span aria-hidden="true">↗</span></a>
       </div>
       <p class="scroll-note">SCROLL TO DISCOVER</p>
     </section>
@@ -65,21 +65,8 @@
         <h2>Made for<br><em>every layer.</em></h2>
         <p>겹쳐 입을수록 선명해지는 당신의 취향.</p>
       </div>
-      <div class="product-grid">
-        <article class="product-card product-women reveal">
-          <div class="product-visual"><span class="shape shape-one"></span><span class="product-number">01</span></div>
-          <div class="product-info"><div><p>WOMEN</p><h3>여성 컬렉션</h3></div><a href="#contact" aria-label="여성 컬렉션 문의하기">↗</a></div>
-        </article>
-        <article class="product-card product-inner reveal">
-          <div class="product-visual"><span class="shape shape-two"></span><span class="product-number">02</span></div>
-          <div class="product-info"><div><p>INNERWEAR</p><h3>여성 이너웨어</h3></div><a href="#contact" aria-label="이너웨어 문의하기">↗</a></div>
-        </article>
-        <article class="product-card product-men reveal">
-          <div class="product-visual"><span class="shape shape-three"></span><span class="product-number">03</span></div>
-          <div class="product-info"><div><p>MEN</p><h3>남성 컬렉션</h3></div><a href="#contact" aria-label="남성 컬렉션 문의하기">↗</a></div>
-        </article>
-      </div>
-      <p class="placeholder-note">* 제품 이미지는 곧 업데이트될 예정입니다.</p>
+      <div class="product-grid" data-products data-limit="3" aria-live="polite"><p class="products-status">제품을 불러오는 중입니다.</p></div>
+      <a class="text-link collection-more" href="products.html">전체 제품 보기 <span aria-hidden="true">↗</span></a>
     </section>
 
     <section class="stories section" id="stories">
@@ -105,5 +92,6 @@
 
   <footer><a class="logo" href="#top">UNDER<span>SHINE</span></a><p>© 2026 UNDERSHINE. ALL RIGHTS RESERVED.</p><a href="#top">BACK TO TOP ↑</a></footer>
   <script src="script.js"></script>
+  <script src="products.js"></script>
 </body>
 </html>
