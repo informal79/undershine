@@ -25,9 +25,28 @@ function createProductCard(product) {
   const text = document.createElement('div');
   const name = document.createElement('h3');
   name.textContent = product.name;
-  const price = document.createElement('p');
-  price.textContent = formatPrice(product.price);
-  text.append(name, price);
+  const priceBlock = document.createElement('div');
+  priceBlock.className = 'price-block';
+
+  if (product.discountRate > 0) {
+    const regularPrice = document.createElement('p');
+    regularPrice.className = 'regular-price';
+    regularPrice.textContent = `정가 ${formatPrice(product.regularPrice)}`;
+    priceBlock.append(regularPrice);
+  }
+
+  const salePrice = document.createElement('p');
+  salePrice.className = 'sale-price';
+  if (product.discountRate > 0) {
+    const discount = document.createElement('strong');
+    discount.textContent = `${product.discountRate}%`;
+    salePrice.append(discount);
+  }
+  const currentPrice = document.createElement('span');
+  currentPrice.textContent = formatPrice(product.price);
+  salePrice.append(currentPrice);
+  priceBlock.append(salePrice);
+  text.append(name, priceBlock);
 
   const buyButton = document.createElement('a');
   buyButton.className = 'buy-button';
