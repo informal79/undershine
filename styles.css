@@ -110,6 +110,8 @@ p { max-width: 40ch; line-height: 1.85; }
 .story h3 { margin: 8px 0 12px; font-size: 21px; letter-spacing: -.035em; }
 .story div > p:last-child { font-size: 13px; }
 .story > a { color: var(--gold); font: 400 22px "DM Sans", sans-serif; }
+.story > .story-arrow { color: var(--gold); font: 400 22px "DM Sans", sans-serif; letter-spacing: 0; }
+.story-more { margin-top: 42px; }
 
 .contact { background: var(--gold); text-align: center; }
 .contact .eyebrow { margin: 0 auto 38px; }
