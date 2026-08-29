@@ -123,6 +123,17 @@ p { max-width: 40ch; line-height: 1.85; }
 .contact-meta div { display: flex; gap: 40px; font-size: 12px; }
 .contact-meta span { font: 600 9px "DM Sans", sans-serif; letter-spacing: .14em; }
 
+.contact-hero { min-height: 76vh; padding: 24vh var(--pad) 15vh; display: flex; flex-direction: column; justify-content: flex-end; border-bottom: 1px solid color-mix(in srgb, var(--green) 18%, transparent); }
+.contact-hero .eyebrow { color: var(--gold); }
+.contact-hero h1 { max-width: 13ch; margin: 34px 0; font-size: clamp(58px, 7.5vw, 112px); line-height: 1.02; }
+.contact-hero > p:last-child { font-size: 14px; }
+.contact-links { display: grid; gap: 18px; }
+.contact-button { min-height: 142px; padding: clamp(26px, 4vw, 56px); display: flex; align-items: center; justify-content: space-between; gap: 36px; border: 1px solid color-mix(in srgb, var(--green) 28%, transparent); transition: background-color .25s ease, border-color .25s ease; }
+.contact-button span { color: var(--gold); font: 600 10px "DM Sans", sans-serif; letter-spacing: .18em; text-transform: uppercase; }
+.contact-button strong { font-size: clamp(20px, 3vw, 38px); letter-spacing: -.04em; text-align: right; }
+.contact-button:hover { background: var(--gold); border-color: var(--gold); }
+.contact-button:hover span { color: var(--green); }
+
 .products-hero { min-height: 76vh; padding: 24vh var(--pad) 15vh; display: flex; flex-direction: column; justify-content: flex-end; border-bottom: 1px solid color-mix(in srgb, var(--green) 18%, transparent); }
 .products-hero .eyebrow { color: var(--gold); }
 .products-hero h1 { max-width: 13ch; margin: 34px 0; font-size: clamp(58px, 7.5vw, 112px); line-height: 1.02; }
@@ -151,7 +162,9 @@ p { max-width: 40ch; line-height: 1.85; }
 
 footer { min-height: 150px; padding: 44px var(--pad); display: flex; align-items: center; justify-content: space-between; gap: 30px; background: var(--green); color: var(--ivory); }
 footer a { color: var(--ivory); }
-footer p, footer > a:last-child { color: var(--ivory); font: 600 9px "DM Sans", sans-serif; letter-spacing: .12em; }
+footer p, footer .back-to-top, .footer-contact { color: var(--ivory); font: 600 9px "DM Sans", sans-serif; letter-spacing: .12em; }
+.footer-contact { display: flex; flex-wrap: wrap; justify-content: center; gap: 14px 24px; }
+.footer-contact a { border-bottom: 1px solid color-mix(in srgb, var(--ivory) 45%, transparent); padding-bottom: 4px; }
 .reveal { opacity: 1; transform: none; }
 
 @media (max-width: 760px) {
@@ -166,6 +179,7 @@ footer p, footer > a:last-child { color: var(--ivory); font: 600 9px "DM Sans", 
   .menu-toggle[aria-expanded=true] span:last-child { transform: translateY(-4.5px) rotate(-45deg); }
   .mobile-nav { position: fixed; inset: 0; z-index: 1; width: 100vw; height: 100dvh; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 32px; background: var(--ivory); font-size: 24px; font-weight: 600; }
   .mobile-nav.open { display: flex; }
+  .mobile-nav .active { color: var(--gold); }
   .hero { min-height: 100svh; padding-top: 68px; display: flex; flex-direction: column; background: var(--green); }
   .hero-image { position: relative; inset: auto; flex: none; width: 100%; height: auto; aspect-ratio: 16/9; object-fit: contain; object-position: center; background: var(--ivory); animation: none; }
   .hero-shade { display: none; }
@@ -193,6 +207,10 @@ footer p, footer > a:last-child { color: var(--ivory); font: 600 9px "DM Sans", 
   .contact-meta { grid-template-columns: 1fr; gap: 28px; }
   .contact-meta div { display: block; }
   .contact-meta span { display: block; margin-bottom: 8px; }
+  .contact-hero { min-height: 72vh; padding-top: 20vh; }
+  .contact-hero h1 { font-size: 49px; }
+  .contact-button { min-height: 120px; padding: 28px 24px; display: block; }
+  .contact-button strong { display: block; margin-top: 18px; font-size: 23px; text-align: left; overflow-wrap: anywhere; }
   .products-hero { min-height: 72vh; padding-top: 20vh; }
   .products-hero h1 { font-size: 49px; }
   .featured-product-card { grid-template-columns: 1fr; min-height: 0; }
@@ -202,7 +220,8 @@ footer p, footer > a:last-child { color: var(--ivory); font: 600 9px "DM Sans", 
   .curated-grid-heading { display: block; }
   .curated-grid-heading h2 { margin-top: 20px; font-size: 42px; }
   footer { align-items: flex-start; flex-wrap: wrap; }
-  footer p { order: 3; width: 100%; }
+  .footer-contact { order: 3; width: 100%; justify-content: flex-start; }
+  footer p { order: 4; width: 100%; }
 }
 
 @media (prefers-reduced-motion: reduce) {
