@@ -30,6 +30,8 @@ body.story-page{background:var(--ivory);color:var(--green);font-family:"Noto San
 .story-page .body ul{margin:0 0 1.7em 1.3em}
 .story-page .body li{margin-bottom:.55em}
 .story-page .body li::marker{color:var(--gold)}
+.story-page .product-cta{display:inline-flex;margin-top:4vh;padding:12px 18px;border:1px solid var(--green);color:var(--green);font-size:13px;font-weight:600}
+.story-page .product-cta:hover{background:var(--gold);border-color:var(--gold)}
 .story-page section.faq,.story-page section.sources{margin-top:9vh}
 .story-page section.faq h2,.story-page section.sources h2{color:var(--green)}
 .story-page section.faq details{padding:18px 0;border-top:1px solid color-mix(in srgb,var(--green) 14%,transparent)}
