@@ -14,7 +14,7 @@ function createProductCard(product) {
   imageLink.setAttribute('aria-label', `${product.name} 구매 페이지 열기`);
 
   const image = document.createElement('img');
-  image.src = product.image;
+  image.src = product.image.replace('/230x230ex/', '/600x600ex/');
   image.alt = product.name;
   image.loading = 'lazy';
   imageLink.append(image);
