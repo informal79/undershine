@@ -24,25 +24,3 @@ mobileNav.querySelectorAll('a').forEach((link) => link.addEventListener('click',
 document.addEventListener('keydown', (event) => {
   if (event.key === 'Escape' && menuButton.getAttribute('aria-expanded') === 'true') closeMenu();
 });
-
-const heroVideo = document.querySelector('.hero-video');
-const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-
-if (heroVideo) {
-  const syncHeroMotion = () => {
-    if (reduceMotion.matches) {
-      heroVideo.pause();
-      heroVideo.classList.remove('is-ready');
-      return;
-    }
-
-    if (heroVideo.readyState >= HTMLMediaElement.HAVE_CURRENT_DATA) {
-      heroVideo.classList.add('is-ready');
-    }
-    heroVideo.play().catch(() => heroVideo.classList.remove('is-ready'));
-  };
-
-  heroVideo.addEventListener('loadeddata', syncHeroMotion);
-  reduceMotion.addEventListener('change', syncHeroMotion);
-  syncHeroMotion();
-}
