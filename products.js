@@ -3,13 +3,21 @@ const featuredProductContainer = document.querySelector('[data-featured-product]
 
 const formatPrice = (price) => `${Number(price).toLocaleString('ko-KR')}원`;
 
+function getPurchaseUrl(product) {
+  const isMobile = window.matchMedia('(max-width: 760px)').matches
+    || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
+  return isMobile && product.mobilePurchaseUrl
+    ? product.mobilePurchaseUrl
+    : product.purchaseUrl;
+}
+
 function createProductCard(product) {
   const card = document.createElement('article');
   card.className = 'shop-card reveal visible';
 
   const imageLink = document.createElement('a');
   imageLink.className = 'shop-card-image';
-  imageLink.href = product.purchaseUrl;
+  imageLink.href = getPurchaseUrl(product);
   imageLink.target = '_blank';
   imageLink.rel = 'noopener noreferrer';
   imageLink.setAttribute('aria-label', `${product.name} 구매 페이지 열기`);
@@ -54,7 +62,7 @@ function createProductCard(product) {
 
   const buyButton = document.createElement('a');
   buyButton.className = 'buy-button';
-  buyButton.href = product.purchaseUrl;
+  buyButton.href = getPurchaseUrl(product);
   buyButton.target = '_blank';
   buyButton.rel = 'noopener noreferrer';
   buyButton.textContent = '구매하기';
@@ -71,7 +79,7 @@ function createFeaturedProduct(product) {
 
   const imageLink = document.createElement('a');
   imageLink.className = 'featured-product-image';
-  imageLink.href = product.purchaseUrl;
+  imageLink.href = getPurchaseUrl(product);
   imageLink.target = '_blank';
   imageLink.rel = 'noopener noreferrer';
   imageLink.setAttribute('aria-label', `${product.name} 구매 페이지 열기`);
@@ -114,7 +122,7 @@ function createFeaturedProduct(product) {
 
   const buyButton = document.createElement('a');
   buyButton.className = 'featured-buy-button';
-  buyButton.href = product.purchaseUrl;
+  buyButton.href = getPurchaseUrl(product);
   buyButton.target = '_blank';
   buyButton.rel = 'noopener noreferrer';
   buyButton.textContent = '구매하기';
