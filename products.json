@@ -1,6 +1,7 @@
 [
   {
     "name": "언더샤인 여성 파스텔 노라인 미디 면팬티 10종 세트",
+    "tagline": "퇴근할 때까지 답답함 없이",
     "price": 16800,
     "regularPrice": 19800,
     "discountRate": 15,
@@ -9,6 +10,7 @@
   },
   {
     "name": "언더샤인 모달 일체형 브라캡 크롭 나시 끈조절 2P",
+    "tagline": "한 장으로 가볍게 준비하는 날",
     "price": 13900,
     "regularPrice": 13900,
     "discountRate": 0,
@@ -17,6 +19,7 @@
   },
   {
     "name": "언더샤인 남성 밴딩 스판 조거팬츠",
+    "tagline": "가볍게 움직이고 싶은 날",
     "price": 9900,
     "regularPrice": 19800,
     "discountRate": 50,
@@ -25,6 +28,7 @@
   },
   {
     "name": "언더샤인 여성 고급 파스텔 맥시 면팬티 6종·10종 세트",
+    "tagline": "편안하게 감싸주는 하루",
     "price": 18800,
     "regularPrice": 34900,
     "discountRate": 46,
@@ -33,6 +37,7 @@
   },
   {
     "name": "언더샤인 여성 4부 밴딩 코튼 와이드핏 데일리 팬츠",
+    "tagline": "한여름을 가볍게 보내는 옷",
     "price": 7900,
     "regularPrice": 7900,
     "discountRate": 0,
@@ -41,6 +46,7 @@
   },
   {
     "name": "언더샤인 여성 스판 조거팬츠",
+    "tagline": "집 앞 외출도 편안하게",
     "price": 11900,
     "regularPrice": 11900,
     "discountRate": 0,
@@ -49,6 +55,7 @@
   },
   {
     "name": "언더샤인 여성 와이드 밴딩 일자·조거 팬츠",
+    "tagline": "느긋한 날의 편안한 선택",
     "price": 14900,
     "regularPrice": 14900,
     "discountRate": 0,
@@ -57,6 +64,7 @@
   },
   {
     "name": "언더샤인 여성 하이웨스트 핀턱 A라인 뒷밴딩 슬랙스 반바지",
+    "tagline": "단정하고 가볍게 입는 날",
     "price": 7900,
     "regularPrice": 11900,
     "discountRate": 33,
@@ -65,6 +73,7 @@
   },
   {
     "name": "언더샤인 여성 노라인 심리스 햄팬티 3장 세트",
+    "tagline": "붙는 옷에도 자연스럽게",
     "price": 9900,
     "regularPrice": 13900,
     "discountRate": 28,
@@ -73,6 +82,7 @@
   },
   {
     "name": "언더샤인 여성 노라인 무봉제 햄팬티 6종 세트",
+    "tagline": "매끈한 실루엣이 필요한 날",
     "price": 14900,
     "regularPrice": 14900,
     "discountRate": 0,
@@ -81,6 +91,7 @@
   },
   {
     "name": "언더샤인 여성 레이온 골지 스판 라운드넥 나시 2종",
+    "tagline": "매일의 레이어드가 가볍게",
     "price": 7900,
     "regularPrice": 11900,
     "discountRate": 33,
@@ -89,6 +100,7 @@
   },
   {
     "name": "언더샤인 여성 스퀘어넥 크롭 면나시 2종",
+    "tagline": "깔끔한 목선을 살리고 싶은 날",
     "price": 15900,
     "regularPrice": 24900,
     "discountRate": 36,
@@ -97,6 +109,7 @@
   },
   {
     "name": "언더샤인 겨울 두꺼운 팬티스타킹 200D 3종 세트",
+    "tagline": "차가운 날에도 포근하게",
     "price": 18800,
     "regularPrice": 29800,
     "discountRate": 36,
@@ -105,6 +118,7 @@
   },
   {
     "name": "언더샤인 여성 소프트 비스코스 긴팔 니트티",
+    "tagline": "부드러운 하루를 입는 기분",
     "price": 15000,
     "regularPrice": 19800,
     "discountRate": 24,
