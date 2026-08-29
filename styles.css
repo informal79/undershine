@@ -56,7 +56,7 @@ p { max-width: 40ch; line-height: 1.85; }
 .hero-copy { position: absolute; left: var(--pad); top: 50%; transform: translateY(-42%); z-index: 1; }
 .eyebrow, .kicker, .section-label { font: 600 10px/1 "DM Sans", sans-serif; letter-spacing: .18em; }
 .hero .eyebrow { color: var(--gold); }
-.hero h1 { max-width: 10ch; margin: 28px 0 34px; color: var(--ivory); font-size: clamp(66px, 9.2vw, 150px); line-height: .88; }
+.hero h1 { max-width: 13ch; margin: 28px 0 34px; color: var(--ivory); font-size: clamp(62px, 6.4vw, 108px); line-height: 1.08; }
 .hero h1 em { color: var(--ivory); }
 .hero-description { font-size: clamp(15px, 1.35vw, 19px); }
 .hero .text-link { color: var(--ivory); }
@@ -144,7 +144,7 @@ footer p, footer > a:last-child { color: var(--ivory); font: 600 9px "DM Sans", 
   .hero-image { object-position: 63% center; }
   .hero-shade { background: linear-gradient(0deg, color-mix(in srgb, var(--green) 86%, transparent), color-mix(in srgb, var(--green) 8%, transparent) 72%); }
   .hero-copy { top: auto; bottom: 64px; transform: none; }
-  .hero h1 { font-size: clamp(58px, 17vw, 72px); margin: 22px 0 26px; }
+  .hero h1 { max-width: 10ch; font-size: clamp(48px, 14vw, 58px); line-height: 1.08; margin: 22px 0 26px; }
   .hero-description { font-size: 14px; }
   .hero .text-link { margin-top: 25px; }
   .scroll-note { display: none; }
