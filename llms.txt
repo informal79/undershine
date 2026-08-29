@@ -12,6 +12,7 @@
 - [내 소개](https://undershine.vercel.app/about.html): UnderShine을 시작한 이야기
 - [제품](https://undershine.vercel.app/products.html): 판매 중인 제품과 구매 링크
 - [이야기](https://undershine.vercel.app/story/): 제품 관리와 브랜드 제작 이야기
+- [연락하기](https://undershine.vercel.app/contact.html): 이메일, YouTube, 공식 스토어 안내
 
 ## 이야기(블로그)
 
