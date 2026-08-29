@@ -69,8 +69,12 @@ function createProductCard(product) {
   const buyButton = document.createElement('a');
   buyButton.className = 'buy-button';
   configurePurchaseLink(buyButton, product);
-  buyButton.textContent = '구매하기';
-  buyButton.setAttribute('aria-label', `${product.name} 구매하기`);
+  buyButton.setAttribute('data-cart-add', '');
+  buyButton.setAttribute('data-name', product.name);
+  buyButton.setAttribute('data-price', String(product.price));
+  buyButton.setAttribute('data-url', product.purchaseUrl);
+  buyButton.textContent = '장바구니 담기';
+  buyButton.setAttribute('aria-label', `${product.name} 장바구니에 담기`);
 
   info.append(text, buyButton);
   card.append(imageLink, info);
@@ -125,7 +129,12 @@ function createFeaturedProduct(product) {
   const buyButton = document.createElement('a');
   buyButton.className = 'featured-buy-button';
   configurePurchaseLink(buyButton, product);
-  buyButton.textContent = '구매하기';
+  buyButton.setAttribute('data-cart-add', '');
+  buyButton.setAttribute('data-name', product.name);
+  buyButton.setAttribute('data-price', String(product.price));
+  buyButton.setAttribute('data-url', product.purchaseUrl);
+  buyButton.textContent = '장바구니 담기';
+  buyButton.setAttribute('aria-label', `${product.name} 장바구니에 담기`);
 
   copy.append(eyebrow, name, tagline, priceBlock, buyButton);
   article.append(imageLink, copy);
