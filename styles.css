@@ -138,17 +138,19 @@ footer p, footer > a:last-child { color: var(--ivory); font: 600 9px "DM Sans", 
 @media (max-width: 760px) {
   html { scroll-behavior: auto; }
   .site-header { height: 68px; }
+  .site-header.menu-open { background: var(--ivory); backdrop-filter: none; }
+  .site-header .logo { position: relative; z-index: 2; }
   .desktop-nav { display: none; }
   .menu-toggle { display: flex; width: 34px; height: 34px; padding: 5px; border: 0; background: transparent; flex-direction: column; justify-content: center; gap: 7px; z-index: 2; }
   .menu-toggle span { width: 100%; height: 2px; background: var(--green); }
   .menu-toggle[aria-expanded=true] span:first-child { transform: translateY(4.5px) rotate(45deg); }
   .menu-toggle[aria-expanded=true] span:last-child { transform: translateY(-4.5px) rotate(-45deg); }
-  .mobile-nav { position: fixed; inset: 0; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 32px; background: var(--ivory); font-size: 24px; font-weight: 600; }
+  .mobile-nav { position: fixed; inset: 0; z-index: 1; width: 100vw; height: 100dvh; display: none; flex-direction: column; align-items: center; justify-content: center; gap: 32px; background: var(--ivory); font-size: 24px; font-weight: 600; }
   .mobile-nav.open { display: flex; }
-  .hero { min-height: 100svh; }
-  .hero-image { object-position: 63% center; }
-  .hero-shade { background: linear-gradient(0deg, color-mix(in srgb, var(--green) 86%, transparent), color-mix(in srgb, var(--green) 8%, transparent) 72%); }
-  .hero-copy { top: auto; bottom: 64px; transform: none; }
+  .hero { min-height: 100svh; padding-top: 68px; display: flex; flex-direction: column; background: var(--green); }
+  .hero-image { position: relative; inset: auto; flex: none; width: 100%; height: auto; aspect-ratio: 16/9; object-fit: contain; object-position: center; background: var(--ivory); animation: none; }
+  .hero-shade { display: none; }
+  .hero-copy { position: relative; left: auto; top: auto; bottom: auto; transform: none; flex: 1; width: 100%; padding: 48px var(--pad) 58px; display: flex; flex-direction: column; justify-content: center; }
   .hero h1 { max-width: 10ch; font-size: clamp(48px, 14vw, 58px); line-height: 1.08; margin: 22px 0 26px; }
   .hero-description { font-size: 14px; }
   .hero .text-link { margin-top: 25px; }
