@@ -81,8 +81,8 @@ p { max-width: 40ch; line-height: 1.85; }
 .values div:last-child { border: 0; }
 .values strong { color: var(--gold); font: 600 10px "DM Sans", sans-serif; }
 
-.collection { background: var(--green); color: var(--ivory); }
-.collection .section-label, .collection .section-heading h2, .collection .text-link, .collection .shop-card-info { color: var(--ivory); }
+.collection { background: var(--ivory); color: var(--green); border-top: 1px solid color-mix(in srgb, var(--green) 14%, transparent); }
+.collection .section-label, .collection .section-heading h2, .collection .section-heading p, .collection .text-link, .collection .shop-card-info { color: var(--green); }
 .collection .section-label span, .collection .section-heading em { color: var(--gold); }
 .section-heading { display: flex; align-items: flex-end; justify-content: space-between; gap: 40px; margin-bottom: clamp(60px, 10vh, 110px); }
 .section-heading p { color: var(--ivory); font-size: 14px; }
