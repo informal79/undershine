@@ -8,15 +8,16 @@ function isMobileDevice() {
     || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
 }
 
+function getPurchaseUrl(product) {
+  return isMobileDevice() && product.mobilePurchaseUrl
+    ? product.mobilePurchaseUrl
+    : product.purchaseUrl;
+}
+
 function configurePurchaseLink(link, product) {
-  link.href = product.purchaseUrl;
-  if (isMobileDevice()) {
-    link.target = '_self';
-    link.removeAttribute('rel');
-  } else {
-    link.target = '_blank';
-    link.rel = 'noopener noreferrer';
-  }
+  link.href = getPurchaseUrl(product);
+  link.target = '_blank';
+  link.rel = 'noopener noreferrer';
 }
 
 function createProductCard(product) {
@@ -75,7 +76,7 @@ function createProductCard(product) {
   cartButton.setAttribute('data-cart-add', '');
   cartButton.setAttribute('data-name', product.name);
   cartButton.setAttribute('data-price', String(product.price));
-  cartButton.setAttribute('data-url', product.purchaseUrl);
+  cartButton.setAttribute('data-url', getPurchaseUrl(product));
   cartButton.textContent = '장바구니 담기';
   cartButton.setAttribute('aria-label', `${product.name} 장바구니에 담기`);
 
@@ -145,7 +146,7 @@ function createFeaturedProduct(product) {
   cartButton.setAttribute('data-cart-add', '');
   cartButton.setAttribute('data-name', product.name);
   cartButton.setAttribute('data-price', String(product.price));
-  cartButton.setAttribute('data-url', product.purchaseUrl);
+  cartButton.setAttribute('data-url', getPurchaseUrl(product));
   cartButton.textContent = '장바구니 담기';
   cartButton.setAttribute('aria-label', `${product.name} 장바구니에 담기`);
 
