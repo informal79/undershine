@@ -3,12 +3,20 @@ const featuredProductContainer = document.querySelector('[data-featured-product]
 
 const formatPrice = (price) => `${Number(price).toLocaleString('ko-KR')}원`;
 
-function getPurchaseUrl(product) {
-  const isMobile = window.matchMedia('(max-width: 760px)').matches
+function isMobileDevice() {
+  return window.matchMedia('(max-width: 760px)').matches
     || /Android|iPhone|iPad|iPod|Mobile/i.test(navigator.userAgent);
-  return isMobile && product.mobilePurchaseUrl
-    ? product.mobilePurchaseUrl
-    : product.purchaseUrl;
+}
+
+function configurePurchaseLink(link, product) {
+  link.href = product.purchaseUrl;
+  if (isMobileDevice()) {
+    link.target = '_self';
+    link.removeAttribute('rel');
+  } else {
+    link.target = '_blank';
+    link.rel = 'noopener noreferrer';
+  }
 }
 
 function createProductCard(product) {
@@ -17,9 +25,7 @@ function createProductCard(product) {
 
   const imageLink = document.createElement('a');
   imageLink.className = 'shop-card-image';
-  imageLink.href = getPurchaseUrl(product);
-  imageLink.target = '_blank';
-  imageLink.rel = 'noopener noreferrer';
+  configurePurchaseLink(imageLink, product);
   imageLink.setAttribute('aria-label', `${product.name} 구매 페이지 열기`);
 
   const image = document.createElement('img');
@@ -62,9 +68,7 @@ function createProductCard(product) {
 
   const buyButton = document.createElement('a');
   buyButton.className = 'buy-button';
-  buyButton.href = getPurchaseUrl(product);
-  buyButton.target = '_blank';
-  buyButton.rel = 'noopener noreferrer';
+  configurePurchaseLink(buyButton, product);
   buyButton.textContent = '구매하기';
   buyButton.setAttribute('aria-label', `${product.name} 구매하기`);
 
@@ -79,9 +83,7 @@ function createFeaturedProduct(product) {
 
   const imageLink = document.createElement('a');
   imageLink.className = 'featured-product-image';
-  imageLink.href = getPurchaseUrl(product);
-  imageLink.target = '_blank';
-  imageLink.rel = 'noopener noreferrer';
+  configurePurchaseLink(imageLink, product);
   imageLink.setAttribute('aria-label', `${product.name} 구매 페이지 열기`);
 
   const image = document.createElement('img');
@@ -122,9 +124,7 @@ function createFeaturedProduct(product) {
 
   const buyButton = document.createElement('a');
   buyButton.className = 'featured-buy-button';
-  buyButton.href = getPurchaseUrl(product);
-  buyButton.target = '_blank';
-  buyButton.rel = 'noopener noreferrer';
+  configurePurchaseLink(buyButton, product);
   buyButton.textContent = '구매하기';
 
   copy.append(eyebrow, name, tagline, priceBlock, buyButton);
