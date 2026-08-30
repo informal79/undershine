@@ -35,12 +35,14 @@ body.story-page{background:var(--ivory);color:var(--green);font-family:"Noto San
 .story-page .product-cta:hover{background:var(--gold);border-color:var(--gold)}
 .story-page section.related{margin-top:9vh}
 .story-page section.related h2{margin-bottom:14px;color:var(--green);font-size:20px}
+.story-page section.related .section-title{margin-bottom:14px;color:var(--green);font-size:20px;font-weight:600}
 .story-page section.related ul{list-style:none;margin:0;padding:0;border-top:1px solid color-mix(in srgb,var(--green) 14%,transparent)}
 .story-page section.related li{border-bottom:1px solid color-mix(in srgb,var(--green) 14%,transparent)}
 .story-page section.related a{display:block;padding:14px 0;color:var(--green);font-size:15px}
 .story-page section.related a:hover{color:var(--gold)}
 .story-page section.faq,.story-page section.sources{margin-top:9vh}
 .story-page section.faq h2,.story-page section.sources h2{color:var(--green)}
+.story-page section.faq .section-title,.story-page section.sources .section-title{color:var(--green);font-size:20px;font-weight:600}
 .story-page section.faq details{padding:18px 0;border-top:1px solid color-mix(in srgb,var(--green) 14%,transparent)}
 .story-page section.faq details:last-of-type{border-bottom:1px solid color-mix(in srgb,var(--green) 14%,transparent)}
 .story-page section.faq summary::before{color:var(--gold)}
