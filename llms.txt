@@ -16,6 +16,9 @@
 
 ## 이야기(블로그)
 
+- [팬티 허리 밴드가 조일 때 한 사이즈 크게 입어야 하나요?](https://undershine.vercel.app/story/underwear-waistband-tight.html): 허리 밴드가 조일 때 편한 팬티의 치수와 제품별 안내를 비교하는 방법을 안내합니다.
+- [속옷이 자꾸 말려 올라가는 이유는 무엇인가요?](https://undershine.vercel.app/story/underwear-rolls-up.html): 속옷이 말려 올라갈 때 사이즈, 착용 위치, 허리와 다리선의 패턴을 차례로 확인하는 방법을 안내합니다.
+- [여성 속옷 사이즈는 어떻게 고르면 실패가 적을까요?](https://undershine.vercel.app/story/womens-underwear-size-guide.html): 속옷의 표기보다 평소 편한 팬티와 제품 실측을 비교해 사이즈 선택의 오차를 줄이는 방법을 안내합니다.
 - [키 160cm, 몸무게 52kg인데 M 사이즈가 맞나요?](https://undershine.vercel.app/story/height-weight-size-guide.html): 키와 몸무게만으로 사이즈를 확정하지 않고, 제품 실측과 평소 편한 옷을 비교하는 방법을 정리했습니다.
 - [속옷은 6개월마다 교체해야 할까요?](https://undershine.vercel.app/story/underwear-replacement-cycle.html): 속옷의 교체 주기에 정답이 있는지 살펴보고, 날짜보다 정확한 교체 신호를 정리했습니다.
 - [속옷과 데일리웨어는 어떻게 관리해야 오래 입을까요?](https://undershine.vercel.app/story/underwear-dailywear-care.html): 소재와 형태를 오래 유지하기 위해 세탁 전부터 보관까지 확인하면 좋은 기본 원칙을 소개합니다.
