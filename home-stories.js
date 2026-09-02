@@ -30,18 +30,24 @@ function createHomeStory(post) {
 }
 
 if (homeStoryList) {
+  const renderLatestStories = (posts) => {
+    const latest = Array.isArray(posts)
+      ? posts.slice().sort((a, b) => String(b.date || '').localeCompare(String(a.date || ''))).slice(0, 3)
+      : [];
+    homeStoryList.replaceChildren(...latest.map(createHomeStory));
+  };
+
   fetch('story/posts.json', { cache: 'no-store' })
     .then((response) => {
       if (!response.ok) throw new Error(String(response.status));
       return response.json();
     })
-    .then((posts) => {
-      const latest = Array.isArray(posts)
-        ? posts.slice().sort((a, b) => String(b.date || '').localeCompare(String(a.date || ''))).slice(0, 3)
-        : [];
-      homeStoryList.replaceChildren(...latest.map(createHomeStory));
-    })
+    .then(renderLatestStories)
     .catch(() => {
+      if (Array.isArray(window.__undershineFallbackStories)) {
+        renderLatestStories(window.__undershineFallbackStories);
+        return;
+      }
       const message = document.createElement('p');
       message.className = 'products-status';
       message.textContent = '이야기를 불러오지 못했습니다.';

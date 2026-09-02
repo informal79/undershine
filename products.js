@@ -168,18 +168,12 @@ async function loadProducts() {
   try {
     const response = await fetch('products.json');
     if (!response.ok) throw new Error('제품 데이터를 불러오지 못했습니다.');
-    const products = await response.json();
-
-    if (featuredProductContainer && products.length) {
-      featuredProductContainer.replaceChildren(createFeaturedProduct(products[0]));
-    }
-
-    productContainers.forEach((container) => {
-      const limit = Number(container.dataset.limit) || products.length;
-      const start = Number(container.dataset.start) || 0;
-      container.replaceChildren(...products.slice(start, start + limit).map(createProductCard));
-    });
+    renderProducts(await response.json());
   } catch (error) {
+    if (Array.isArray(window.__undershineFallbackProducts)) {
+      renderProducts(window.__undershineFallbackProducts);
+      return;
+    }
     if (featuredProductContainer) {
       const message = document.createElement('p');
       message.className = 'products-status products-error';
@@ -193,6 +187,18 @@ async function loadProducts() {
       container.replaceChildren(message);
     });
   }
+}
+
+function renderProducts(products) {
+  if (featuredProductContainer && products.length) {
+    featuredProductContainer.replaceChildren(createFeaturedProduct(products[0]));
+  }
+
+  productContainers.forEach((container) => {
+    const limit = Number(container.dataset.limit) || products.length;
+    const start = Number(container.dataset.start) || 0;
+    container.replaceChildren(...products.slice(start, start + limit).map(createProductCard));
+  });
 }
 
 loadProducts();
