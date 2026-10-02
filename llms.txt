@@ -16,6 +16,7 @@
 
 ## 이야기(블로그)
 
+- [여성 속옷 사이즈는 어떻게 고르면 실패가 적을까요?](https://undershine.vercel.app/story/women-underwear-size-guide.html): 제품별 치수와 평소 편한 속옷, 움직임을 함께 확인해 사이즈를 고르는 순서를 정리했습니다.
 - [속옷이 자꾸 말려 올라가는 이유는 무엇인가요?](https://undershine.vercel.app/story/underwear-rolling-up-causes.html): 속옷의 말림을 사이즈, 밴드 위치, 움직임과 제품별 상세 정보로 점검하는 방법을 정리했습니다.
 - [키 160cm, 몸무게 52kg인데 M 사이즈가 맞나요?](https://undershine.vercel.app/story/height-weight-size-guide.html): 키와 몸무게만으로 사이즈를 확정하지 않고, 제품 실측과 평소 편한 옷을 비교하는 방법을 정리했습니다.
 - [속옷은 6개월마다 교체해야 할까요?](https://undershine.vercel.app/story/underwear-replacement-cycle.html): 속옷의 교체 주기에 정답이 있는지 살펴보고, 날짜보다 정확한 교체 신호를 정리했습니다.
