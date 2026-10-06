@@ -16,6 +16,7 @@
 
 ## 이야기(블로그)
 
+- [브라캡 나시는 속옷 없이 입어도 괜찮을까요?](https://undershine.vercel.app/story/bra-cami-without-bra.html): 컵의 구조와 활동 상황, 착용감과 관리 표시를 확인하는 방법을 정리했습니다.
 - [팬티 허리 밴드가 조일 때 한 사이즈 크게 입어야 하나요?](https://undershine.vercel.app/story/underwear-waistband-tight.html): 조이는 위치와 움직일 때의 느낌, 제품별 사이즈표를 비교하는 방법을 정리했습니다.
 - [속옷이 자꾸 말려 올라가는 이유는 무엇인가요?](https://undershine.vercel.app/story/underwear-rolling-up.html): 사이즈, 밴드 압박과 제품 상태를 차례로 확인하는 방법을 정리했습니다.
 - [여성 속옷 사이즈는 어떻게 고르면 실패가 적을까요?](https://undershine.vercel.app/story/womens-underwear-size-guide.html): 평소 편한 속옷의 치수와 제품별 사이즈표, 밴드 압박감을 함께 확인하는 방법을 정리했습니다.
