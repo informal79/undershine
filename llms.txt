@@ -16,6 +16,7 @@
 
 ## 이야기(블로그)
 
+- [데일리 속옷은 어떤 소재를 고르는 것이 편안할까요?](https://undershine.vercel.app/story/daily-underwear-material-comfort.html): 혼용률, 원단 정보, 봉제 위치와 관리 표시를 함께 확인하는 방법을 정리했습니다.
 - [브라캡 나시는 속옷 없이 입어도 괜찮을까요?](https://undershine.vercel.app/story/bra-cami-without-bra.html): 컵의 구조와 활동 상황, 착용감과 관리 표시를 확인하는 방법을 정리했습니다.
 - [팬티 허리 밴드가 조일 때 한 사이즈 크게 입어야 하나요?](https://undershine.vercel.app/story/underwear-waistband-tight.html): 조이는 위치와 움직일 때의 느낌, 제품별 사이즈표를 비교하는 방법을 정리했습니다.
 - [속옷이 자꾸 말려 올라가는 이유는 무엇인가요?](https://undershine.vercel.app/story/underwear-rolling-up.html): 사이즈, 밴드 압박과 제품 상태를 차례로 확인하는 방법을 정리했습니다.
