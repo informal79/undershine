@@ -16,6 +16,7 @@
 
 ## 이야기(블로그)
 
+- [면 속옷과 혼방 속옷은 무엇이 다른가요?](https://undershine.vercel.app/story/cotton-blend-underwear-difference.html): 섬유 혼용률, 밴드와 봉제선, 제품별 취급상 주의사항을 비교하는 방법을 정리했습니다.
 - [민감한 피부에는 어떤 속옷 소재가 잘 맞을까요?](https://undershine.vercel.app/story/sensitive-skin-underwear-material.html): 혼용률, 밴드와 봉제선, 제품별 취급 표시를 함께 확인하는 방법을 정리했습니다.
 - [데일리 속옷은 어떤 소재를 고르는 것이 편안할까요?](https://undershine.vercel.app/story/daily-underwear-material-comfort.html): 혼용률, 원단 정보, 봉제 위치와 관리 표시를 함께 확인하는 방법을 정리했습니다.
 - [브라캡 나시는 속옷 없이 입어도 괜찮을까요?](https://undershine.vercel.app/story/bra-cami-without-bra.html): 컵의 구조와 활동 상황, 착용감과 관리 표시를 확인하는 방법을 정리했습니다.
