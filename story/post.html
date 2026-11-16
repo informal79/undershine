@@ -118,11 +118,15 @@ nav.pn .next{text-align:right}
 
 <div class="wrap">
   <div class="top"><a class="back" href="index.html">&larr; 목록으로</a></div>
-  <main id="main"></main>
+  <main id="main">
+    <h1>UnderShine 이야기</h1>
+    <p>각 글의 정적 페이지는 <a href="index.html">이야기 목록</a>에서 확인할 수 있습니다.</p>
+  </main>
 </div>
 <script>
 (function(){
   var main = document.getElementById('main');
+  main.innerHTML = '';
 
   function el(tag, cls, text){
     var n = document.createElement(tag);
